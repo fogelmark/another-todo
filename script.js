@@ -7,7 +7,7 @@ let storageInput = JSON.parse(localStorage.getItem('todosArray'))
 
 if (storageInput) {
   todosArray = storageInput
-  console.log(todosArray);
+  // console.log(todosArray);
 }
 
 
