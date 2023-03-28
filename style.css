@@ -14,7 +14,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 35rem;
   border: 1px solid;
   /* padding: 0rem 2rem 2rem 2rem; */
   border-radius: .3rem;
@@ -24,7 +24,8 @@
 form {
   display: flex;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 1rem 0;
+  /* width: 100%; */
   background-color: #333;
 }
 
@@ -34,9 +35,10 @@ input[type=text] {
   border: none;
 }
 
-input[type=submit] {
-  color: #fff;
-  background-color: #333;
+.btn-add {
+  /* color: #fff; */
+  /* background-color: #333; */
+  padding: .5rem;
   border: none;
 }
 
