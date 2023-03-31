@@ -14,7 +14,14 @@
   display: grid;
   place-items: center;
   height: 100vh;
-  border: 1px solid blue;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 1rem;
+  }
 }
 
 .container {
@@ -46,9 +53,7 @@
 
 .title {
   text-align: center;
-  /* margin-bottom: 1rem; */
   font-size: 2em;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 form {
@@ -60,6 +65,11 @@ form {
   background-color: #fff;
   border-radius: 0.3rem;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1019607843);
+}
+@media (max-width: 600px) {
+  form {
+    height: 3rem;
+  }
 }
 
 input[type=text] {
@@ -87,9 +97,6 @@ path {
   margin-left: 1rem;
 }
 
-/* .fi-xnsuxl-trash-bin {
-  cursor: pointer;
-} */
 .btn {
   padding: 0.7rem 1.5rem;
   border: none;

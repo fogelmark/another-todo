@@ -19,7 +19,12 @@
   display: grid;
   place-items: center;
   height: 100vh;
-  border: 1px solid blue;
+  @include for-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 1rem;
+  }
 }
 
 .container {
@@ -49,9 +54,7 @@
 
 .title {
   text-align: center;
-  /* margin-bottom: 1rem; */
   font-size: 2em;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 form {
@@ -63,6 +66,9 @@ form {
   background-color: #fff;
   border-radius: .3rem;
   box-shadow: 2px 2px 10px 1px #0000001a;
+  @include for-mobile {
+    height: 3rem;
+  }
 }
 
 input[type=text] {
@@ -89,10 +95,6 @@ path {
   align-self: center;
   margin-left: 1rem;
 }
-
-/* .fi-xnsuxl-trash-bin {
-  cursor: pointer;
-} */
 
 .btn {
   padding: .7rem 1.5rem;
