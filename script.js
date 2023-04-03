@@ -78,6 +78,7 @@ const addTask = (e) => {
 }
 
 const deleteTask = e => {
+  
   if (e.target.classList.contains('fi-xnsuxl-trash-bin')) {
     e.target.parentElement.remove()
     const taskIndex = taskArray.findIndex(task => task.id == e.target.id)

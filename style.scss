@@ -83,6 +83,10 @@ input[type=text] {
   color: #4469e3;
 }
 
+i {
+  align-self: center;
+}
+
 .task-checkbox,
 .task-title,
 svg,
@@ -90,10 +94,18 @@ path {
   pointer-events: none;
 }
 
+.fi-xnsuxl-trash-bin {
+  transition: .3s ease-out;
+}
+
+.fi-xnsuxl-trash-bin:hover {
+  color: #aaa;
+}
+
 .task-title {
   margin-right: auto;
   align-self: center;
-  margin-left: 1rem;
+  word-break: break-word;
 }
 
 .btn {
@@ -118,6 +130,7 @@ path {
 .task-container {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid #aaa;
   cursor: pointer;
@@ -136,4 +149,17 @@ path {
 .error-message {
   text-align: center;
   padding: 1rem 1rem 0 1rem;
+}
+
+.error-message {
+  animation: shake 0.25s;
+  animation-iteration-count: 1.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
 }
